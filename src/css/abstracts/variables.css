@@ -1,0 +1,44 @@
+/**
+ * Neutral Colors
+ * 1) Neutral colors are grayscale values used throughout the UI
+ */
+:root {
+  --color-neutral-white: #fff;
+  --color-neutral-gray-02: #f9f9f9;
+  --color-neutral-gray-07: #eee;
+  --color-neutral-gray-13: #ddd;
+  --color-neutral-gray-27: #bbb;
+  --color-neutral-gray-50: #808080;
+  --color-neutral-gray-60: #666;
+  --color-neutral-gray-73: #444;
+  --color-neutral-gray-93: #131313;
+  --color-neutral-black: #000;
+}
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+/**
+ * Max Width
+ */
+
+:root {
+  --l-max-width: 70rem !important;
+  --l-linelength-width: 36rem !important;
+}
+
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+
+/**
+ * Spacing and offsets
+ * 1) Used to space grids and body padding
+ */
+
+:root {
+  --spacing: 1rem;
+  --spacing-small: 0.5rem;
+  --spacing-large: 2rem;
+}

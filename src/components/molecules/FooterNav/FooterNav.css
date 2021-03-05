@@ -1,0 +1,22 @@
+@import '../../../css/abstracts/variables.css';
+
+/*------------------------------------*\
+    #FOOTER NAV
+\*------------------------------------*/
+
+/**
+ * 1) Navigation within the footer
+ */
+.c-footer-nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.c-footer-nav__item {
+  margin-right: 2rem;
+}
+
+.c-footer-nav__link {
+  color: #fff;
+  color: var(--color-neutral-white);
+}
