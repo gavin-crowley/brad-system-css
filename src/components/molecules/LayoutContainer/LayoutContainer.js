@@ -16,15 +16,4 @@ export const LayoutContainer = (props) => {
 
 // comment 
 // comment 
-
-import React from 'react'
-
-const LayoutContainer = () => {
-  return (
-    <div>
-
-    </div>
-  )
-}
-
-export default LayoutContainer
+// comment 
