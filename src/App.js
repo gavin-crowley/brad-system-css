@@ -1,13 +1,13 @@
 import React from 'react'
-import { InlineForm } from './components/molecules/InlineForm/InlineForm'
-import BradHome from './templates/BradHome'
+import ComponentsTest from './ComponentsTest'
 import VanillaReactHome from './templates/VanillaReactHome'
 
 const App = () => {
   return (
-    <div className="App">
-      <BradHome />
-    </div>
+    <>
+      <ComponentsTest />
+      {/* <VanillaReactHome /> */}
+    </>
   )
 }
 

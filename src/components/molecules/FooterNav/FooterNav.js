@@ -1,5 +1,5 @@
 import React from 'react'
-import "./FooterNav.css";
+import "./FooterNav.scss";
 
 export const FooterNav = (props) => {
 	return (

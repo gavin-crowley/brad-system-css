@@ -1,5 +1,5 @@
 import React from 'react'
-import './TextPassage.css'
+import './TextPassage.scss'
 
 export const TextPassage = ({ children }) => {
     return (

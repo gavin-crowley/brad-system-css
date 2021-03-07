@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/App.css'
+// import '../css/App.css'
 import { TextPassage } from '../components/atoms/TextPassage/TextPassage'
 import { Button } from '../components/atoms/Button/Button'
 import { PrimaryNav } from '../components/molecules/PrimaryNav/PrimaryNav'

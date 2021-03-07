@@ -1,6 +1,6 @@
 import React from 'react'
 import classnames from 'classnames';
-import './LayoutContainer.css';
+import './LayoutContainer.scss';
 
 export const LayoutContainer = (props) => {
   const { className, children, variant, align, ...other } = props;
