@@ -1,4 +1,5 @@
 import React from 'react'
+import './css/style.scss'
 
 // Atoms 
 
@@ -11,6 +12,7 @@ import { Textarea } from './components/atoms/Textarea/Textarea'
 import { TextPassage } from './components/atoms/TextPassage/TextPassage'
 
 // Molecules
+import { AddToCartForm } from './components/molecules/AddToCartForm/AddToCartForm'
 import { Card } from './components/molecules/Card/Card'
 import { CheckboxField } from './components/molecules/CheckboxField/CheckboxField'
 import { Field } from './components/molecules/Field/Field'
@@ -44,6 +46,7 @@ import heroImg from './images/fpo-1200x650.png'
 
 // Pages 
 import { Homepage } from './pages/Homepage/Homepage'
+import { ImageGallery } from './components/molecules/ImageGallery/ImageGallery'
 
 
 
@@ -52,10 +55,7 @@ import { Homepage } from './pages/Homepage/Homepage'
 const ComponentsTest = () => {
     return (
         <>
-            <Homepage />
-            {/* <Hero heroimgsrc={heroImg} heroimgalt="Alt Text" title="Hero Title" description="This is the hero description">
-                Hello Hero
-</Hero> */}
+            <ImageGallery />
         </>
     )
 }

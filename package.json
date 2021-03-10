@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:css": "node-sass --output-style compressed -o dist src && postcss dist/components/**/*.css --use autoprefixer --replace"
   },
   "eslintConfig": {
     "extends": [

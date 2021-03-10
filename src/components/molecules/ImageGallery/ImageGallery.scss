@@ -1,0 +1,27 @@
+@import '../../../css/scss/abstracts/variables';
+@import '../../../css/scss/abstracts/mixins';
+// @import '../../../css/scss/base/lists';
+
+/*------------------------------------*\
+    #IMAGEGALLERY
+\*------------------------------------*/
+
+/**
+ * 1) 
+ */
+.c-image-gallery {
+  @include boxStyles();
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.c-image-gallery__main-img {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.c-image-gallery__thumb-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
