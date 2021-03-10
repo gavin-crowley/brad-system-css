@@ -32,6 +32,8 @@ const ComponentsTest = () => {
     return (
         <>
 
+            {/* comment */}
+
             <CheckboxField
                 required={true}
                 listItems={[
