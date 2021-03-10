@@ -1,11 +1,12 @@
 import React from 'react'
-import "./CardList.css";
+import "./CardList.scss";
 import { Card } from '../../molecules/Card/Card'
 
 export const CardList = (props) => {
+    console.log(props)
     return (
         <ul className="c-card-list">
-            {props.listItems.map(function (listItem, index) {
+            {props.cardListItems.map(function (listItem, index) {
                 return (
                     <Card
                         key={`c-card-${index}`}

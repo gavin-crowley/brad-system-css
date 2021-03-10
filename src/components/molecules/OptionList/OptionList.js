@@ -1,39 +1,54 @@
-import React from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-export const OptionList = (props) => {
-  return (
-    <ul className='c-option-list'>
-      {props.listItems.map((listItem, index) => {
-        let boundItemChange = onItemChange.bind(this, listItem);
-        return (
-          <li
-            className='c-option-list__item'
-            key={`option-list-item-${index}`}
-          >
-            {console.log(props.label)}
-            <label className='c-input-group' htmlFor={listItem.id}>
-              <input
-                id={listItem.id}
-                type={listItem.type}
-                name={listItem.name}
-                value={listItem.value}
-                className='c-input-group__control'
-                checked={listItem.checked}
-                disabled={listItem.disabled}
-                readOnly={listItem.readonly}
-                onChange={boundItemChange}
-                aria-describedby={props.ariaDescribedBy}
-                aria-labelledby={props.ariaLabelledBy}
-              />
-              <span className='c-input-group__text'>{listItem.text}</span>
-            </label>
-          </li>
-        )
-      })}
-    </ul>
-  );
-
+export class OptionList extends Component {
+  render() {
+    return (
+      <ul className='c-option-list'>
+        {this.props.listItems.map((listItem, index) => {
+          let boundItemChange = this.onItemChange.bind(this, listItem);
+          return (
+            <li
+              className='c-option-list__item'
+              key={`option-list-item-${index}`}
+            >
+              {console.log(this.props.label)}
+              <label className='c-input-group' htmlFor={listItem.id}>
+                <input
+                  id={listItem.id}
+                  type={listItem.type}
+                  name={listItem.name}
+                  value={listItem.value}
+                  className='c-input-group__control'
+                  checked={listItem.checked}
+                  disabled={listItem.disabled}
+                  readOnly={listItem.readonly}
+                  onChange={boundItemChange}
+                  aria-describedby={this.props.ariaDescribedBy}
+                  aria-labelledby={this.props.ariaLabelledBy}
+                />
+                <span className='c-input-group__text'>{listItem.text}</span>
+              </label>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  }
 }
+
+OptionList.propTypes = {
+  listItems: PropTypes.array,
+  id: PropTypes.string,
+  type: PropTypes.string,
+  name: PropTypes.string,
+  disabled: PropTypes.bool,
+  readOnly: PropTypes.bool,
+  onChange: PropTypes.func,
+  text: PropTypes.string,
+  ariaDescribedBy: PropTypes.string,
+  ariaLabelledBy: PropTypes.string
+};
 
 OptionList.defaultProps = {
   listItems: [
@@ -56,4 +71,4 @@ OptionList.defaultProps = {
       type: 'radio'
     }
   ]
-}
+};
