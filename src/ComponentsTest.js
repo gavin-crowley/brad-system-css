@@ -3,9 +3,12 @@ import React from 'react'
 // Atoms 
 import { TextPassage } from './components/atoms/TextPassage/TextPassage'
 import { Button } from './components/atoms/Button/Button'
+import { Label } from './components/atoms/Label/Label'
 
 // Molecules
 import { Card } from './components/molecules/Card/Card'
+import { CheckboxField } from './components/molecules/CheckboxField/CheckboxField'
+import { Field } from './components/molecules/Field/Field'
 import { FooterNav } from './components/molecules/FooterNav/FooterNav'
 import { Hero } from './components/molecules/Hero/Hero'
 import { InlineForm } from './components/molecules/InlineForm/InlineForm'
@@ -28,9 +31,31 @@ import heroImg from './images/fpo-1200x650.png'
 const ComponentsTest = () => {
     return (
         <>
-            <TextPassage>
-                <p>A text passage contains arbitrary text that might come from a CMS. It should live within a container that caps the line length of the text to avoid a straining reading experience.</p>
-            </TextPassage>
+
+            <CheckboxField
+                required={true}
+                listItems={[
+                    {
+                        id: 'checkbox-1',
+                        name: 'checkbox-example',
+                        text: 'Checkbox 1',
+                        type: 'checkbox'
+                    },
+                    {
+                        id: 'checkbox-2',
+                        name: 'checkbox-example',
+                        text: 'Checkbox 2',
+                        type: 'checkbox'
+                    },
+                    {
+                        id: 'checkbox-3',
+                        name: 'checkbox-example',
+                        text: 'Checkbox 3',
+                        type: 'checkbox'
+                    }
+                ]}
+                fieldNote='This is a required field'
+            />
         </>
     )
 }
